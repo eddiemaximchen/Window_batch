@@ -1,0 +1,6 @@
+REM 修改 VM 的 MAC Address 必要設定
+set RSADR1='ethernet0.generatedAddressOffset = \"0\"'
+set RSADR2='ethernet0.addressType = \"generated\"' , 'ethernet0.addressType = \"static\"'
+
+REM 將 VM 網路模式設為 bridge 橋接模式
+set RSTYPE='ethernet0.connectionType = \"nat\"' , 'ethernet0.connectionType = \"bridge\"'
