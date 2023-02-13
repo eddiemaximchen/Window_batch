@@ -1,2 +1,0 @@
-REM dir /B =>only list filename
-dir /B ^| findstr "mactohost" rem pip in command line do not 
