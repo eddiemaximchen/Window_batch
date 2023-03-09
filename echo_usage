@@ -3,5 +3,3 @@ set /P myname=Please input your name:  # set env myname
 echo Hello %myname%  # get env myname
 echo.  # have a empty line
 echo Today is %date% %time%   # get date time
-pause # show press any key to countine
-timeout 6 # pause 6 secs
