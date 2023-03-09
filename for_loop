@@ -1,0 +1,6 @@
+# variable expression ==> command line: %variable ==>script: %%variable
+# format for %%i in (scoop) do () ==> like python for i in range()
+for %%i in (*) do (
+    echo %%i
+    timeout 1
+)
