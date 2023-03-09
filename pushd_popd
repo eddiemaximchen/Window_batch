@@ -1,0 +1,4 @@
+cd /d c:\windows\system32\drivers\etc
+pushd %cd%    # save path before cd
+cd /d c:\windows
+popd  # change back to the pushd path
