@@ -1,0 +1,7 @@
+# https://blog.xuite.net/mike181683e/wretch/545867528
+%userprofile% # user's home dir
+%ALLUSERSPROFILE% # the folder contain all users setting
+%APPDATA% # application data for current user
+%CD% # current dir like pwd in ubuntu
+%CommonProgramFiles% == c:\Program
+%COMPUTERNAME% # computer name
