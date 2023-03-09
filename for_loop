@@ -4,3 +4,8 @@ for %%i in (*) do (
     echo %%i
     timeout 1
 )
+# In batch file if it does not explicitly mention, variable will use the first value, and ignore the rest.
+# set var=Peter & set var=John & echo %var%  var=Peter
+# if you want the var= John, you need to do variable delay
+# add this expression SETLOCAL ENABLEDELAYEDEXPANSION before you assign value to a variable 
+# In this time, variable will only get the value when you request, which is the lastest one.
