@@ -1,0 +1,7 @@
+ping 168.95.192.1
+echo %errorlevel%
+REM 成功,回傳 1
+
+ping 123.123.123.123
+echo %errorlevel%
+REM 失敗,回傳 0
