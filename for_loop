@@ -4,17 +4,20 @@ for %%i in (*) do (
     echo %%i <----here is case sensitive 
     timeout 1
 )
+==== for %%i in (*) DO echo %%i & timeout 1
 
 for %%i in (*.mp4 *.avi *.mpg) DO @echo %%i ==> if true in () assign value to i and echo(print out) batch file only because of %%
 for /D %i in (%userprofile%\*) DO @echo %i ==> in command line print out all dir under user home dir
 for /R c:\temp\ %%G in (*.bak) do del "%%G" ==> delete all *.bak in temp and all subdir
 FOR /F "tokens=1,2 delims==" %%i IN (test.ini) DO set %%i=%%j
 # For /F IN (test.ini) => read file test.ini line by line
-#tokens=1,2 means two variabel
+#tokens=1,2 means first line and second line
 #set 1=i 2=j
 # delims==' one line one variable
 
-==== for %%i in (*) DO echo %%i & timeout 1
+for /f "tokens=2" %i in ('sc query ^| find /i "SERVICE_NAME"') do @echo %i
+# sc query will show service, all service have 2 line. this for indicate to assign second line of service to i and print out
+
 # In batch file if it does not explicitly mention, variable will use the first value, and ignore the rest.
 # set var=Peter & set var=John & echo %var%  var=Peter
 # if you want the var= John, you need to do variable delay
