@@ -1,2 +1,2 @@
 pause # show press any key to countine
-timeout 6 # pause 6 secs
+timeout 6 # pause 6 secs # command line will count down
