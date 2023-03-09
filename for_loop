@@ -1,9 +1,14 @@
 # variable expression ==> command line: %variable ==>script: %%variable
 # format for %%i in (scoop) do () ==> like python for i in range()
 for %%i in (*) do (
-    echo %%i
+    echo %%i <----here is case sensitive 
     timeout 1
 )
+
+for %%i in (*.mp4 *.avi *.mpg) DO @echo %%i ==> if true in () assign value to i and echo(print out) batch file only because of %%
+for /D %i in (%userprofile%\*) DO @echo %i ==> in command line print out all dir under user home dir
+for /R c:\temp\ %%G in (*.bak) do del "%%G" ==> delete all *.bak in temp and all subdir
+FOR /F "tokens=1,2 delims==" %%i IN (test.ini) DO set %%i=%%j
 
 ==== for %%i in (*) DO echo %%i & timeout 1
 # In batch file if it does not explicitly mention, variable will use the first value, and ignore the rest.
