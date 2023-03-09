@@ -5,3 +5,18 @@
 %CD% # current dir like pwd in ubuntu
 %CommonProgramFiles% == c:\Program
 %COMPUTERNAME% # computer name
+%DATE% # system date
+%ERRORLEVEL% # last command result 0 for success, other is failure
+%HomeDrive% # usually the c drive
+%HomePath%  # user's home dir  ex: \Users\eddie
+%HOMESHARE% # user's share dir
+%NUMBER_OF_PROCESSORS% # like the name
+%OS% # always will be Windows_NT
+%Path% # C:\Windows\system32
+%PROCESSOR_ARCHITECTURE%  # x86 or AMD64
+%ProgramFiles%  # C:\Program Files
+%SystemDrive%   # c:\
+%SystemRoot%    # root dir usually:C:\Windows
+%TIME% # system time
+%UserName%  # login id
+%USERPROFILE% # equals to %HomePath%
