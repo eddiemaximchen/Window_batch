@@ -1,2 +1,0 @@
-powershell -Command "(Get-CimInstance Win32_PhysicalMemory | Measure-Object -Property capacity -Sum).sum /8Mb" > max.txt
-powershell -Command "(Get-CimInstance Win32_PhysicalMemory | Measure-Object -Property capacity -Sum).sum /8Mb" > min.txt
