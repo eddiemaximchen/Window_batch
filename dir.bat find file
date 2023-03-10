@@ -1,0 +1,3 @@
+https://learn.microsoft.com/zh-tw/windows-server/administration/windows-commands/dir
+
+dir /B ^| findstr "*mactohost" # look for *mactohost in files and folders
