@@ -1,0 +1,5 @@
+ssh-keygen # generate ssh key
+ssh-keygen -t rsa # use rsa algorithm
+ssh-keygen -t rsa -P '' -f %USERPROFILE%\.ssh\id_rsa -q
+# -P security method here set it to None means no passphase
+# -q create ssh without prompt 
