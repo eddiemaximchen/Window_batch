@@ -1,0 +1,4 @@
+@echo off
+for /r %%a in (*.jpg *.png *.bmp *.exe) do for %%b in ("%%~dpa\.") do echo ren "%%~a" "%%~nxb%%~xa"
+pause
+# the %%~nxb returns the filename and extension of %%b which is folder in this case, and that is used in the rename command. %%~xa returns the .extension of the %%a string.
