@@ -1,3 +1,8 @@
 https://learn.microsoft.com/zh-tw/windows-server/administration/windows-commands/dir
 
 dir /B ^| findstr "*mactohost" # look for *mactohost in files and folders
+
+for /f "tokens=1" %%y in ('dir /B ^| findstr "mactohost"') do (
+  set CN=%%y
+)
+# CN = d1mactohost
