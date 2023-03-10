@@ -1,4 +1,4 @@
-powershell>>Get-CimInstance Win32_PhysicalMemory
+powershell>>Get-CimInstance Win32_PhysicalMemory  # ubuntu df -a command
 
 內容如下
 Caption              : 實體記憶體
