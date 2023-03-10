@@ -23,6 +23,8 @@ for in () do: (file) (script) (range)
 
 for /f "skip=2  #read output and skip the first 3
 
+for /F "tokens=1-3 delims=." %x in ('echo d1a1.11.zip') do (echo %x ) #把d1a1.11.zip 以:分三段 把第一段放入變數x中
+
 for %%i in (*.mp4 *.avi *.mpg) DO @echo %%i ==> if true in () assign value to i and echo(print out) batch file only because of %%
 for /D %i in (%userprofile%\*) DO @echo %i ==> in command line print out all dir under user home dir
 for /R c:\temp\ %%G in (*.bak) do del "%%G" ==> delete all *.bak in temp and all subdir
