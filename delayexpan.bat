@@ -7,3 +7,4 @@ setlocal enabledelayexpansion
 set var = john 
 set var = eddie
 #in this case var will be eddie and the variable will be !
+#要延遲展開的變數格式由 %var% 更改為 !var!
