@@ -1,0 +1,9 @@
+https://learn.microsoft.com/zh-tw/windows-server/administration/windows-commands/icacls
+Icacls %Key% /c /t /Inheritance:d > nul
+# %key% is setted as private key
+# 先查詢現%key%權限
+# /t 在目前目錄及其子目錄中的所有指定檔案上執行作業。
+# /c 即使發生任何檔案錯誤，仍會繼續作業。 仍會顯示錯誤訊息。
+# Inheritance:d 刪除繼承
+# inheritance:e 則代表「啟用繼承」的意思
+Icacls %Key% /c /t /Grant %UserName%:F  # :F means full control give user full control
