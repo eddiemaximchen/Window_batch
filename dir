@@ -2,6 +2,8 @@ dir                  #顯示目前的目錄中的檔和子目錄
 
 dir /a               #顯示目前的目錄中的檔和子目錄，包括隱藏檔和系統檔
 
+dir /b               #display only file name
+
 dir c: /a:d          #顯示 C 盤目前的目錄中的目錄
 
 dir c: /a:-d         #顯示 C 盤根目錄中的檔
